@@ -1,4 +1,3 @@
-// server/models/Flight.js
 const { Schema, model } = require('mongoose');
 
 const flightSchema = new Schema({

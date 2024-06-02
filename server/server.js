@@ -1,4 +1,3 @@
-// server/server.js
 const express = require('express');
 const { ApolloServer } = require('apollo-server-express');
 const path = require('path');
@@ -29,7 +28,6 @@ app.get('/', (req, res) => {
   })
   
   
-  // Create a new instance of an Apollo server with the GraphQL schema
   const startApolloServer = async (typeDefs, resolvers) => {
     await server.start();
     server.applyMiddleware({ app });
@@ -42,5 +40,4 @@ app.get('/', (req, res) => {
     })
     };
     
-  // Call the async function to start the server
     startApolloServer(typeDefs, resolvers);

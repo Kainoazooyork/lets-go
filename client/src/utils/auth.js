@@ -1,4 +1,3 @@
-// client/src/utils/auth.js
 import decode from 'jwt-decode';
 
 class AuthService {

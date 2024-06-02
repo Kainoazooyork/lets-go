@@ -1,4 +1,3 @@
-// client/src/components/Signup.js
 import React, { useState } from 'react';
 import { useMutation } from '@apollo/client';
 import { ADD_USER } from '../utils/queries';
