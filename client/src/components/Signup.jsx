@@ -43,6 +43,7 @@ const Signup = () => {
           value={formState.username}
           onChange={handleChange}
         />
+        <br />
         <input
           type="email"
           placeholder="Email"
@@ -50,6 +51,7 @@ const Signup = () => {
           value={formState.email}
           onChange={handleChange}
         />
+        <br />
         <input
           type="password"
           placeholder="Password"
@@ -57,6 +59,7 @@ const Signup = () => {
           value={formState.password}
           onChange={handleChange}
         />
+        <br />
         <button type="submit">Signup</button>
       </form>
       {error && <div>Signup failed</div> && <div><p>{JSON.stringify(error)}</p></div>}

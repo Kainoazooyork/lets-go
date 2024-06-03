@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+html{
+  background-color:#8adaf0;
+}
+a{
+  margin: 10px;
+}
+.flights{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

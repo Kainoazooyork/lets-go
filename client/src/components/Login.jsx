@@ -39,6 +39,7 @@ const Login = () => {
           value={formState.email}
           onChange={handleChange}
         />
+        <br />
         <input
           type="password"
           placeholder="Password"
@@ -46,6 +47,7 @@ const Login = () => {
           value={formState.password}
           onChange={handleChange}
         />
+        <br />
         <button type="submit">Login</button>
       </form>
       {error && <div>Login failed</div>}

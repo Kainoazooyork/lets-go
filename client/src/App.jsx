@@ -6,12 +6,12 @@ import Signup from './components/Signup';
 import Auth from './utils/auth';
 import { ApolloProvider } from '@apollo/client';
 import client from './apolloClient'
-
+import './App.css'
 const App = () => {
   return (
        <ApolloProvider client={client}>
     <Router>
-      <div className="container">
+      <div className="container App">
         <nav>
           {Auth.loggedIn() ? (
             <>
