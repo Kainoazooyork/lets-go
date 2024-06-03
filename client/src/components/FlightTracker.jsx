@@ -24,6 +24,7 @@ function FlightTracker ()  {
       setDeparture('');
       setArrival('');
       setStatus('');
+      window.location.reload()
     } catch (err) {
       console.error(err);
     }
@@ -33,9 +34,9 @@ function FlightTracker ()  {
     return <div>Loading...</div>;
   }
 // console.log(data)
-//   fetch("https://api.aviationstack.com/v1/flights?access_key=6dbaed1e1ae149a0a38bdd92ef73030f")
-//   .then(res=>res.json())
-//   .then(resp=>console.log(resp))
+  fetch("https://api.aviationstack.com/v1/flights?access_key=6dbaed1e1ae149a0a38bdd92ef73030f")
+  .then(res=>res.json())
+  .then(resp=>console.log(resp))
   return (
     <div className="container">
       <h1>Flight Tracker</h1>
