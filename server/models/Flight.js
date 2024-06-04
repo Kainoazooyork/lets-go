@@ -6,5 +6,5 @@ const flightSchema = new Schema({
   arrival: { type: String, required: true },
   status: { type: String, required: true },
 });
-
-module.exports = model('Flight', flightSchema);
+const Flight = model('Flight', flightSchema);
+module.exports = Flight
